@@ -1,0 +1,123 @@
+.page__contact{
+	position: relative;
+	.container{
+		max-width: 940px;
+		margin: 0 auto;
+	}
+
+	.entry-content{
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 28px;
+		color: #FFFFFF;
+
+		margin-bottom: 46px;
+		strong{
+			color: #6DC5D3;
+		}
+		p+p{
+			margin-top: 30px;
+		}
+	}
+	&__email{
+		position: relative;
+		font-size: 24px;
+		line-height: 32px;
+		color: #FFFFFF;
+		margin-bottom: 80px;
+
+		strong{
+			font-weight: bold;
+			color: #2EA8E0;
+		}
+		a{
+			color: #FFFFFF;
+		}
+	}
+	&__thumb{
+		margin-bottom: 80px;
+	}
+	.wpcf7-form{
+	    font-weight: normal;
+	    font-size: 14px;
+	    color: #FFFFFF;
+	    padding: 32px 40px 16px;
+	    margin: 0 auto 30px;
+	    background: linear-gradient(180deg, rgba(64, 99, 173, 0.04) 0%, rgba(64, 99, 173, 0.08) 49.61%);
+		border: 1px solid rgba(64, 99, 173, 0.3);
+		box-sizing: border-box;
+		-webkit-backdrop-filter: blur(15px);
+		backdrop-filter: blur(15px);
+		border-radius: 8px;
+	    transition: all .5s;
+	    &__header{
+	    	text-align: center;
+	    	margin-bottom: 32px;
+	    }
+	    &__title{
+	    	font-weight: 600;
+			font-size: 24px;
+			line-height: 32px;
+			color: #6DC6DA;
+	    }
+	    &__excerpt{
+	    	font-weight: normal;
+			font-size: 18px;
+			line-height: 32px;
+			color: #828282;
+	    }
+	    textarea {
+		    min-height: 125px;
+		}
+		input:not(.wpcf7-submit), textarea{
+    		padding: 12px 16px;
+		    border: 1px solid #1F4FA1;
+		    background: transparent;
+		    color: #fff;
+			&[type="radio"]{
+				margin-bottom: 0;
+				margin-right: 5px;
+			}
+			&:focus{
+				outline: none;
+				box-shadow: none;
+			}
+		}
+		.wpcf7-submit{
+			width: 100%;
+		}
+	}
+
+
+	@media (max-width: 1199px){
+		.wpcf7-form{
+			input, textarea {
+			    font-size: 14px;
+			}
+			&__excerpt{
+				font-size: 14px;
+				line-height: 28px;
+			}
+		}
+	}
+	@media (max-width: 991px){
+		.wpcf7-form__title {
+		    font-size: 22px;
+		}
+		.entry-content {
+		    font-size: 18px;
+		}
+	}
+	@media (max-width: 767px){
+		&__thumb{
+			margin-bottom: 40px;
+		}
+		.wpcf7-form{
+			padding: 32px 24px 16px;
+		}
+		&__form{
+			max-width: 450px;
+			margin: 0 auto;
+		}
+	}
+}
